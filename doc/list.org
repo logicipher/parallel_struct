@@ -1,0 +1,18 @@
+#+title: How to implement list for parallel program
+* List with lock, using mutex
+
+To accomplish what a normal list can do, wwe need to implement the following interfaces:
+
++ modify
+  - push_back :: add a new item at the end
+  - push_front :: add a new item at the front
+  - insert :: add a new item just behind the psecified position
+  - pop_front :: pop up the first item from list
+  - pop_back :: pop up the last item from the list
++ read
+  - front :: access the first item
+  - back :: access the last item
+  - iterator :: use the iterator to access elements
++ meta data access
+  - size :: get the number of elements
+  - empty :: check whether the list is empty
